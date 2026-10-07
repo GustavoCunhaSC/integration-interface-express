@@ -1,7 +1,7 @@
 import { Pencil, SearchX, Trash2 } from 'lucide-react'
 import Button from '../../../components/Button'
 
-export default function UsersTable({ users, total, onEdit, onDelete, busy = false }) {
+export default function UsersTable({ users, total, onEdit, onDelete }) {
   return (
     <section aria-label="Lista de usuários" className="rounded-xl border border-line bg-white p-3 shadow-sm">
       <div className="overflow-x-auto">
@@ -21,8 +21,8 @@ export default function UsersTable({ users, total, onEdit, onDelete, busy = fals
                 <td className="w-[30%] px-4 py-3 text-muted">{user.email}</td>
                 <td className="w-[200px] px-4 py-3">
                   <div className="flex gap-2.5">
-                    <Button disabled={busy} size="icon" aria-label={`Editar ${user.name}`} title="Editar usuário" onClick={() => onEdit(user)}><Pencil size={17} aria-hidden="true" /></Button>
-                    <Button disabled={busy} variant="danger" size="icon" aria-label={`Excluir ${user.name}`} title="Excluir usuário" onClick={() => onDelete(user)}><Trash2 size={17} aria-hidden="true" /></Button>
+                    <Button size="icon" aria-label={`Editar ${user.name}`} title="Editar usuário" onClick={() => onEdit(user)}><Pencil size={17} aria-hidden="true" /></Button>
+                    <Button variant="danger" size="icon" aria-label={`Excluir ${user.name}`} title="Excluir usuário" onClick={() => onDelete(user)}><Trash2 size={17} aria-hidden="true" /></Button>
                   </div>
                 </td>
               </tr>
