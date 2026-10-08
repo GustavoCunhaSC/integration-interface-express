@@ -1,16 +1,43 @@
-# React + Vite
+# Integrando React.js com Node.js + Express
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto prático da aula de **Desenvolvimento Web na UNIFACIMP WYDEN**.
 
-Currently, two official plugins are available:
+Nesta aula, vamos integrar uma interface desenvolvida em React.js com uma API construída em Node.js e Express. Durante a prática, serão conectadas as operações de consulta, cadastro, edição e exclusão de usuários.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Como acompanhar a aula
 
-## React Compiler
+É só seguir o passo a passo apresentado nos slides da aula. Cada etapa indica o arquivo que deve ser alterado, o código necessário e o resultado esperado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Preparando o projeto
 
-## Expanding the ESLint configuration
+Antes de começar, tenha o [Node.js](https://nodejs.org/) e o Git instalados no computador.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/GustavoCunhaSC/integration-interface-express.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd integration-interface-express
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Inicie o projeto
+
+```bash
+npm run dev
+```
+
+Depois, abra no navegador o endereço exibido pelo Vite no terminal.
+
+## Agora é com você
+
+Com o projeto em execução, abra os slides, acompanhe cada etapa e coloque a mão no código. Vamos integrar o frontend com a API e construir o CRUD de usuários juntos.
